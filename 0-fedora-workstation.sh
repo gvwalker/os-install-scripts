@@ -7,7 +7,7 @@ max_parallel_downloads=10
 " | sudo tee -a /etc/dnf/dnf.conf
 
 # Debloat
-sudo dnf remove -y cheese gnome-calendar gnome-weather gnome-clocks gnome-contacts gnome-tour gnome-logs gnome-remote-desktop gnome-maps gnome-calculator gnome-characters gnome-system-monitor gnome-font-viewer gnome-shell-extension* totem mediawriter gnome-connections nano nano-default-editor gnome-user-docs gnome-color-manager eog gnome-text-editor evince rhythmbox
+sudo dnf remove -y cheese gnome-calendar gnome-weather gnome-clocks gnome-contacts gnome-tour gnome-logs gnome-remote-desktop gnome-maps gnome-calculator gnome-characters gnome-font-viewer gnome-shell-extension* totem mediawriter gnome-connections nano nano-default-editor gnome-user-docs gnome-color-manager eog gnome-text-editor evince rhythmbox
 
 # Run Updates
 sudo dnf autoremove -y
