@@ -7,7 +7,7 @@ max_parallel_downloads=10
 " | sudo tee -a /etc/dnf/dnf.conf
 
 # Debloat
-sudo dnf remove -y abrt* adcli anaconda* cheese dmidecode gnome-classic-session anthy-unicode avahi baobab bluez-cups brasero-libs trousers hyperv* alsa-sof-firmware boost-date-time gnome-calendar gnome-weather gnome-boxes gnome-clocks gnome-contacts gnome-tour gnome-logs gnome-remote-desktop gnome-maps gnome-backgrounds virtualbox-guest-additions yelp gnome-calculator gnome-characters gnome-system-monitor gnome-font-viewer gnome-font-viewer simple-scan evince-djvu orca fedora-bookmarks fedora-chromium-config mailcap open-vm-tools openconnect openvpn ppp pptp qgnomeplatform rsync samba-client unbound-libs vpnc podman yajl zd1211-firmware atmel-firmware libertas-usb8388-firmware linux-firmware gnome-shell-extension* totem mediawriter gnome-connections nano nano-default-editor xorg-x11-drv-vmware openssh-server sane* perl* thermald NetworkManager-ssh sos kpartx dos2unix gnome-user-docs sssd cyrus-sasl-plain gnome-color-manager geolite2* traceroute mtr realmd gnome-themes-extra ModemManager teamd tcpdump mozilla-filesystem nmap-ncat spice-vdagent eog gnome-text-editor perl-IO-Socket-SSL evince
+sudo dnf remove -y cheese gnome-calendar gnome-weather gnome-clocks gnome-contacts gnome-tour gnome-logs gnome-remote-desktop gnome-maps gnome-calculator gnome-characters gnome-system-monitor gnome-font-viewer gnome-shell-extension* totem mediawriter gnome-connections nano nano-default-editor gnome-user-docs gnome-color-manager eog gnome-text-editor evince rhythmbox
 
 # Run Updates
 sudo dnf autoremove -y
@@ -39,7 +39,7 @@ sudo dnf groupupdate core -y
 
 # General
 flatpak install -y org.libreoffice.LibreOffice com.github.tchx84.Flatseal org.bleachbit.BleachBit org.gnome.Loupe org.gnome.Evolution com.usebottles.bottles org.gnome.Calculator com.mattjakeman.ExtensionManager org.gnome.Characters org.gnome.Evince sh.cider.Cider
-sudo dnf install -y 1password 1password-cli btop syncthing ulauncher microsoft-edge-stable alacritty sqlite3 zsh zsh-autosuggestions zsh-syntax-highlighting ffmpeg compat-ffmpeg4 gnome-tweaks dconf-editor bat exa yadm --best --allowerasing
+sudo dnf install -y 1password 1password-cli btop syncthing ulauncher microsoft-edge-stable alacritty sqlite3 zsh zsh-autosuggestions zsh-syntax-highlighting ffmpeg compat-ffmpeg4 gnome-tweaks dconf-editor bat exa yadm git --best --allowerasing
 
 # Get Dotfiles
 yadm clone https://github.com/gvwalker/dotfiles.git
@@ -70,7 +70,7 @@ git clone --filter=blob:none https://github.com/wimpysworld/quickemu ~/software/
 
 # Configure GNOME
 gsettings set org.gnome.desktop.a11y always-show-universal-access-status true
-gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,close'
+gsettings set org.gnome.desktop.wm.preferences button-layout "appmenu:minimize,close"
 gsettings set org.gnome.shell.favorite-apps "['microsoft-edge.desktop', 'Alacritty.desktop', 'sh.cider.Cider.desktop', 'code.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop']"
 
 echo "The configuration is now complete."
