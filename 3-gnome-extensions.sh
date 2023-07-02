@@ -1,4 +1,4 @@
-sudo dnf install pipx
+sudo dnf install -y pipx
 pipx install gnome-extensions-cli
 echo 'PATH="/home/grant/.local/bin:$PATH"' | tee -a  ~/.zshrc
 PATH="/home/grant/.local/bin:$PATH"
@@ -19,15 +19,15 @@ gnome-extensions-cli i Vitals@CoreCoding.com
 # App Indicator
 dconf write /org/gnome/shell/extensions/appindicator/icon-size 0
 dconf write /org/gnome/shell/extensions/appindicator/legacy-tray-enabled true
-dconf write /org/gnome/shell/extensions/appindicator/tray-pos 'right'
+dconf write /org/gnome/shell/extensions/appindicator/tray-pos "'right'"
 
 # Dash to Dock
 dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity 0.8
-dconf write /org/gnome/shell/extensions/dash-to-dock/click-action 'focus-minimize-or-appspread'
+dconf write /org/gnome/shell/extensions/dash-to-dock/click-action "'focus-minimize-or-appspread'"
 dconf write /org/gnome/shell/extensions/dash-to-dock/disable-overview-on-startup true
-dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action 'cycle-windows'
+dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'cycle-windows'"
 dconf write /org/gnome/shell/extensions/dash-to-dock/show-trash false
-dconf write /org/gnome/shell/extensions/dash-to-dock/transparency-mode 'DYNAMIC'
+dconf write /org/gnome/shell/extensions/dash-to-dock/transparency-mode "'DYNAMIC'"
 
 # Just Perfection
 dconf write /org/gnome/shell/extensions/just-perfection/activities-button false
@@ -39,7 +39,7 @@ dconf write /org/gnome/shell/extensions/just-perfection/weather false
 dconf write /org/gnome/shell/extensions/just-perfection/events-button false
 
 # OpenWeather
-dconf write /org/gnome/shell/extensions/openweather/city '-33.8402778,18.6494444>Durbanville, City of Cape Town, Western Cape, South Africa>0'
+dconf write /org/gnome/shell/extensions/openweather/city "'-33.8402778,18.6494444>Durbanville, City of Cape Town, Western Cape, South Africa>0'"
 
 # Vitals
 dconf write /org/gnome/shell/extensions/vitals/position-in-panel 0
