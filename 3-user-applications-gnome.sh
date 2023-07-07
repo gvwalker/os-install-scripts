@@ -2,7 +2,7 @@
 
 # General
 flatpak install -y flathub org.libreoffice.LibreOffice com.github.tchx84.Flatseal org.bleachbit.BleachBit org.gnome.Loupe org.gnome.Evolution com.usebottles.bottles org.gnome.Calculator com.mattjakeman.ExtensionManager org.gnome.Characters org.gnome.Evince sh.cider.Cider
-sudo dnf install -y 1password 1password-cli btop syncthing ulauncher microsoft-edge-stable alacritty sqlite3 zsh zsh-autosuggestions zsh-syntax-highlighting ffmpeg compat-ffmpeg4 gnome-tweaks dconf-editor bat exa yadm git syncthingtray python3-pytz --best --allowerasing
+sudo dnf install -y 1password 1password-cli btop syncthing tmux lazygit ulauncher microsoft-edge-stable alacritty sqlite3 zsh zsh-autosuggestions zsh-syntax-highlighting ffmpeg compat-ffmpeg4 gnome-tweaks dconf-editor bat exa yadm git syncthingtray python3-pytz --best --allowerasing
 
 # Install Starship
 wget https://starship.rs/install.sh
