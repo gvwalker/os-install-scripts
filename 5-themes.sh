@@ -4,6 +4,8 @@ mkdir -p ~/software
 # ZSH syntax highlighting
 git clone https://github.com/catppuccin/zsh-syntax-highlighting ~/software/zsh-syntax-highlighting-theme
 
+bat cache --build
+
 # GTK
 sudo dnf install sassc -y
 git clone https://github.com/catppuccin/gtk
