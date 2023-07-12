@@ -11,7 +11,10 @@ chmod +x install.sh
 rm install.sh
 
 # Development
-sudo dnf install -y code emacs neovim fzf ripgrep fd-find nodejs ruby 
+sudo dnf install -y code emacs neovim fzf ripgrep fd-find nodejs ruby docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+sudo usermod -aG docker $USER
+sudo systemctl enable docker.service
 
 # Gaming
 # sudo dnf install steam -y

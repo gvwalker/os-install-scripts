@@ -40,6 +40,9 @@ sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/ho
 # YADM
 sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_37/home:TheLocehiliosan:yadm.repo
 
+# Docker Engine
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+
 # LazyGit
 sudo dnf copr enable atim/lazygit -y
 
